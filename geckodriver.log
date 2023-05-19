@@ -1,0 +1,79 @@
+1684412433709	geckodriver	INFO	Listening on 127.0.0.1:35953
+1684412434234	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "49017" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqRu5UF"
+Gtk-Message: 17:50:34.269: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1684412435288	Marionette	INFO	Marionette enabled
+1684412435301	Marionette	INFO	Listening on port 37773
+Read port: 37773
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:49017
+1684412435573	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqRu5UF/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49017/devtools/browser/a596cd64-e5cc-434f-87e4-d13a6ce87e64
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1684412491505	geckodriver	INFO	Listening on 127.0.0.1:47929
+1684412491912	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "58021" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileabpXhX"
+Gtk-Message: 17:51:31.944: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1684412492731	Marionette	INFO	Marionette enabled
+1684412492736	Marionette	INFO	Listening on port 43881
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Read port: 43881
+WebDriver BiDi listening on ws://127.0.0.1:58021
+1684412492904	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileabpXhX/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58021/devtools/browser/6d8bc535-e518-41fb-b362-2b04f5001e9d
+1684412513933	Marionette	INFO	Stopped listening on port 43881
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1684412625665	geckodriver	INFO	Listening on 127.0.0.1:47459
+1684412626035	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "49349" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileZMruhC"
+Gtk-Message: 17:53:46.068: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1684412626953	Marionette	INFO	Marionette enabled
+1684412626964	Marionette	INFO	Listening on port 39603
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Read port: 39603
+WebDriver BiDi listening on ws://127.0.0.1:49349
+1684412627157	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZMruhC/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49349/devtools/browser/78efc1cc-5266-452a-b694-e82d26229a40
+1684412656054	geckodriver	INFO	Listening on 127.0.0.1:45493
+1684412656292	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "55971" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileYDLDCn"
+Gtk-Message: 17:54:16.332: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1684412657245	Marionette	INFO	Marionette enabled
+1684412657250	Marionette	INFO	Listening on port 38773
+Read port: 38773
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:55971
+1684412657434	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYDLDCn/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55971/devtools/browser/17aa0e2f-f20c-41f9-9513-1f49cfc51f0f
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+1684412711061	Marionette	INFO	Stopped listening on port 38773
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1684412713948	Marionette	INFO	Stopped listening on port 39603
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
