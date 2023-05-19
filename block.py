@@ -52,23 +52,10 @@ result = pytesseract.image_to_string(img)
 	
 # 				file.write(result)
 # 				print(result)
-				
+			
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-import pdftotext
+# import pdftotext
 import re
 from  datetime import datetime
 
