@@ -14,7 +14,7 @@ with open(pdf_document, "rb") as filehandle:
     # print(page1)
     # print(page1.extractText())
     text = page1.extract_text()
-    # print(text)
+    print(text)
 
 
 
@@ -132,7 +132,7 @@ invoice_number = re.search(r'Invoice No.\s*\n(.+?)\s*\n', text).group(1).strip()
 
 invoice_date = re.search(r'Dated\s*\n(.+?)\s*\n', text).group(1).strip() or re.search(r'Date\s*\n(.+?)\s*\n', text).group(1).strip()
 
-Total = re.search(r'Total\s*\n\S*\n(.+?)\s*\n', text).group(1).strip()
+Total = re.search(r'Total\s*\n\S*\n(.+?)\s*\n', text).group(1).strip()  
 
 services = re.search(r'Services\s*\n\S*\n(.+?)\s*\n', text).group(1).strip()
 
