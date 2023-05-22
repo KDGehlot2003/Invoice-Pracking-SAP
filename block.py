@@ -128,9 +128,9 @@ def date(x):
 
 # print(text)
 
-invoice_number = re.search(r'Invoice No.\s*\n(.+?)\s*\n', text).group(1).strip()
+invoice_number = re.search(r'Invoice No.\s*\n(.+?)\s*\n', text).group(1).strip() or re.search(r'Invoice Number\s*\n(.+?)\s*\n', text).group(1).strip()
 
-invoice_date = re.search(r'Dated\s*\n(.+?)\s*\n', text).group(1).strip()
+invoice_date = re.search(r'Dated\s*\n(.+?)\s*\n', text).group(1).strip() or re.search(r'Date\s*\n(.+?)\s*\n', text).group(1).strip()
 
 Total = re.search(r'Total\s*\n\S*\n(.+?)\s*\n', text).group(1).strip()
 
