@@ -3,7 +3,7 @@ from pdf2image import convert_from_path
  
  
 # Store Pdf with convert_from_path function
-images = convert_from_path('SINTEX_INDUSTRIES_LTD_-_KALASAGAR_SALES_-_GST_2023-24_0628_1-May-23.pdf')
+images = convert_from_path('test.pdf')
  
 for i in range(len(images)):
    

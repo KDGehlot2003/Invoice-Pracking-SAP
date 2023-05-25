@@ -14,7 +14,7 @@ with open(pdf_document, "rb") as filehandle:
     # print(page1)
     # print(page1.extractText())
     text = page1.extract_text()
-    print(text)
+    # print(text)
 
 
 
