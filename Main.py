@@ -1,6 +1,7 @@
 from pdf2image import convert_from_path
 import easyocr
 import re
+from datetime import datetime
 # import pytesseract
 
 global scanned_text
@@ -30,7 +31,7 @@ for i in result:
         file.write(i)
         file.write("\n")
         scanned_text = i
-        print(scanned_text)
+        # print(scanned_text)
 
 
 def extract_date_from_pdf():
@@ -51,19 +52,63 @@ def extract_invoice_no_from_pdf():
     extracted_invoice_no = []
 
     for i in result:
-        invoice_no_pattern = r'[A-Za-z]{2}\/\d{2}-\d{2}\/\d{3}'
+        invoice_no_pattern = r'[A-Za-z]{2}\/\d{2}-\d{2}\/\d{3}|[A-Za-z]{2}\/\d{4}-\d{2}\/\d{4}|\d{4}-\d{2}\/\d{4}|\d{4}-\d{2}\/\d{3}'
         invoices = re.findall(invoice_no_pattern, i)
         extracted_invoice_no.extend(invoices)
 
     return extracted_invoice_no
 
+def extract_PO_no_from_pdf():
+    
+    extracted_PO_no = []
+
+    for i in result:
+        PO_no_pattern = r'^\d{10}$'
+        POs = re.findall(PO_no_pattern, i)
+        extracted_PO_no.extend(POs)
+
+    return extracted_PO_no
+
+
+
 
 dates = extract_date_from_pdf()
-for date in dates:
-    print("date: ",date)
+dt_lst = []
+for i in dates:
+    date_object = datetime.strptime(i, '%d-%b-%y').date()
+    dt = date_object.strftime("%d.%m.%y")
+    dt_lst.append(dt)
+max_dt = max(dt_lst)
+try:
+    if max_dt!=None:
+        print("date: ",max_dt)
+    else:
+        print("Date No. : CAN'T FIND THE VALUE ")
+except:
+    print("date error")
 
+
+# for date in dates:
+#     date_object = datetime.strptime(date, '%d-%b-%y').date()
+#     dt = date_object.strftime("%d.%m.%y")
+#     print("date: ",dt)
 
 invoices = extract_invoice_no_from_pdf()
-for invoice in invoices:
-    print("Invoice No.", invoice)
+# for invoice in invoices:
+try:
+    if invoices!=None:
+        print("Invoice No. :", invoices[0])
+    else:
+        print("Invoice No. : CAN'T FIND THE VALUE ")
+except:
+    print("Invoice error")
 
+POs = extract_PO_no_from_pdf()
+# for PO in POs:
+try:
+    if POs!=None:
+        print("PO No. :", POs[0])
+    else:
+        print("PO No. : CAN'T FIND THE VALUE ")
+except:
+    print("PO error")
