@@ -5,11 +5,21 @@
     <title>title</title>
 </head>
 <body>
-    <h1> {{mymembers.firstname}} {{mymembers.lastname}} </h1>
 
-    <p>Phone: {{ mymember.phone}} </p>
-    <p>Memebr since: {{mymember.joined_date}}</p>
+    {% extends "master.html" %}
 
-    <p>Back to <a href="/members">Members</a></p>
+    {% block title %}
+        Details about {{mymember.firstname}}{{mymember.lastname}}
+    {% endblock %}
+
+    {% block content %}
+        <h1> {{mymembers.firstname}} {{mymembers.lastname}} </h1>
+
+        <p>Phone: {{ mymember.phone}} </p>
+        <p>Memebr since: {{mymember.joined_date}}</p>
+
+        <p>Back to <a href="/members">Members</a></p>
+
+    {% endblock %}
 </body>
 </html>
