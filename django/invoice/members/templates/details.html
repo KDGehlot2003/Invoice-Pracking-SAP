@@ -5,21 +5,19 @@
     <title>title</title>
 </head>
 <body>
-
+    
     {% extends "master.html" %}
 
     {% block title %}
-        Details about {{mymember.firstname}}{{mymember.lastname}}
+      Details about {{ mymember.firstname }} {{ mymember.lastname }}
     {% endblock %}
-
+    
     {% block content %}
-        <h1> {{mymembers.firstname}} {{mymembers.lastname}} </h1>
-
-        <p>Phone: {{ mymember.phone}} </p>
-        <p>Memebr since: {{mymember.joined_date}}</p>
-
-        <p>Back to <a href="/members">Members</a></p>
-
-    {% endblock %}
+      <div class="mycard">
+        <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+        <p>Phone {{ mymember.phone }}</p>
+        <p>Member since: {{ mymember.joined_date }}</p>
+      </div>
+    {% endblock %}  
 </body>
 </html>
