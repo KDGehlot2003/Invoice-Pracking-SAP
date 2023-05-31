@@ -2,6 +2,8 @@ from pdf2image import convert_from_path
 import easyocr
 import re
 from datetime import datetime
+import xlwt
+from xlwt import Workbook
 # import pytesseract
 
 global scanned_text
@@ -112,3 +114,22 @@ try:
         print("PO No. : CAN'T FIND THE VALUE ")
 except:
     print("PO error")
+
+
+
+wb = Workbook()
+
+
+sheet1 = wb.add_sheet('Sheet 1')
+
+
+
+sheet1.write(1, 0, 'Date')
+sheet1.write(2, 0, 'Invoice No.')
+sheet1.write(3, 0, 'PO No.')
+
+sheet1.write(1, 1, max_dt)
+sheet1.write(2, 1, invoices[0])
+sheet1.write(3, 1, POs[0])
+
+wb.save('xlwt example.xls')
