@@ -1,0 +1,121 @@
+*** Settings ***
+Library           SikuliLibrary
+Library           AutoItLibrary
+Variables         F:/Invoice/final/main.py
+Variables         F:/Invoice/final/fetch.py
+Variables         F:/Invoice/final/script/condition.py
+
+*** Variables ***
+${date}           ${max_dt}
+${reference_no}    ${invoices[0]}
+${rate_gst}       ${t_rate_gst}
+${rate}           ${t_rate}
+
+*** Test Cases ***
+T1
+    SikuliLibrary.Click    F:\\Invoice\\images\\SAP_ICON.jpg
+    sleep    1s
+    SikuliLibrary.Click    F:\\Invoice\\images\\SAP_LOGON.jpg
+    sleep    1s
+    SikuliLibrary.Input Text    F:\\Invoice\\images\\TEXT_BOX_MIR7.jpg    MIR7
+    SikuliLibrary.Press Special Key    ENTER
+    sleep    6s
+    SikuliLibrary.Input Text    \    ${date}
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    1s
+    SikuliLibrary.Input Text    \    2023-24/0234.
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    1s
+    SikuliLibrary.Input Text    \    ${rate_gst}
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    1s
+    SikuliLibrary.Input Text    \    INR
+    sleep    2s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    2s
+    SikuliLibrary.Press Special Key    SPACE
+    sleep    2s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    2s
+    SikuliLibrary.Input Text    \    KC
+    sleep    1s
+    SikuliLibrary.Press Special Key    ENTER
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    1s
+    SikuliLibrary.Input Text    \    4007
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    1s
+    SikuliLibrary.Input Text    \    4000
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    1s
+    SikuliLibrary.Press Special Key    SPACE
+    sleep    1s
+    SikuliLibrary.Press Special Key    DOWN
+    sleep    1s
+    SikuliLibrary.Press Special Key    ENTER
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    500ms
+    SikuliLibrary.Press Special Key    TAB
+    sleep    500ms
+    SikuliLibrary.Press Special Key    TAB
+    sleep    500ms
+    SikuliLibrary.Press Special Key    TAB
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    1s
+    SikuliLibrary.Input Text    \    4
+    sleep    1s
+    SikuliLibrary.Press Special Key    ENTER
+    sleep    1s
+    SikuliLibrary.Press Special Key    TAB
+    sleep    500ms
+    SikuliLibrary.Input Text    \    1000035604
+    sleep    500ms
+    SikuliLibrary.Press Special Key    ENTER
+    sleep    10s
+    SikuliLibrary.Click    F:\\Invoice\\images\\SIMULATION.jpg
+    SikuliLibrary.Click    F:\\Invoice\\images\\SIMULATION.jpg
+    sleep    10s
+	
+T2
+
+    Run    python F:\\Invoice\\final\\script\\goto_right.py
+    sleep    1s
+	Run    python F:\\Invoice\\final\\script\\goto_right.py
+    sleep    1s
+	Run    python F:\\Invoice\\final\\script\\goto_right.py
+    sleep    1s
+	Run    python F:\\Invoice\\final\\script\\goto_right.py
+    sleep    1s
+    Run    python F:\\Invoice\\final\\script\\goto_down.py
+    sleep    1s
+	Run    python F:\\Invoice\\final\\script\\ctrla.py
+	sleep    1s
+	Run    python F:\\Invoice\\final\\script\\ctrlc.py
+	sleep    1s
+T3
+    Run    python F:\\Invoice\\final\\script\\condition.py
+    sleep    2s
+    ${crate}    Set Variable    ${rate_to_be_checked}
+    WHILE    ${rate} == ${crate}
+    Log    Executed as long as the condition is True.
+    BuiltIn.Log To Console    YEAH!
+    BREAK
+    END

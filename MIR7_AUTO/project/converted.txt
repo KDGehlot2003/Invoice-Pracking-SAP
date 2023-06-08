@@ -1,0 +1,132 @@
+converted.txt 
+ 
+Tax Invoice
+(DUPLICATE FOR TRANSPORTER)
+Tax Invoice
+ACUTE SYSTEMS AND SOLUTIONS
+Invoice No.
+Dated
+PLOT NO
+16
+HARI Om INDUSTRIAL CO.OP LTD
+AS/23-24/104
+23-May-23
+NEAR SHANTINATH MILL
+UMROAD
+Delivery Note
+ModefTerms of Payment
+NEAR NAVJIVAN CIRCLE
+SURAT
+GUJARAT
+395007
+As/23-24/104
+#SOAYS CREMT FROH NATERUAL Recened date At slTe
+MO-9714108367
+Reference No, & Date_
+Other References
+GSTINIUIN; 24CXZPKO484N1ZM
+State Name
+Gujarat; Code
+24
+A8/23-24/104 dt 23-May-23
+E-Mail
+divyesh@acutegyetem In
+Buyer's Order No.
+Dated
+Consignee (Ship to)
+Sintex Industries Limited (Yarn)
+4300002966
+18-May-23
+Dispatch Doc No,
+Delivery Note Date
+Village
+Lunsapur; Tal
+Jaffrabad
+Rajula; Amreli (district)-365540.
+23-May-23
+GSTINIUIN
+24AADCSO858E3ZJ
+Dispatched through
+Destination
+State Name
+Gujarat; Code
+24
+Terms of Delivery
+Buyer (Bill to)
+TaSe
+1U
+5h &Ol
+Sintex Industries Limited (Yarn)
+Village
+Lunsapur; Tal
+Jaffrabad
+Rajula; Amreli (district)-385540.
+GSTINIUIN
+24AADCSO858E3ZJ
+State Name
+Gujarat; Code
+24
+Sl
+Description of Goods
+HSNISAC
+Quantity
+Rate
+per
+Disc  %
+Amount
+No
+HP LASERJET 1020+PRINTER
+84433240
+NOS
+15,000.00| NOS
+15,000.00
+VNC3J14530
+CGST
+1,350.00
+SGST
+1,350.00
+Total
+1 NOS
+{17,700.00
+Amount Chargeable (in words)
+E. &0.E
+INR Seventeen Thousand Seven Hundred Only
+HSNISAC
+Taxable
+Central Tax
+State Tax
+Total
+Value
+Rate
+Amount
+Rate
+Anount
+Tax Amount
+84433240
+15,000.O0
+9%
+1,350.00
+9%
+1,350.00
+2.70000
+Total
+15,000.00
+1350.00 
+1,350.00
+2,700.00
+Tax Amount (in words)
+INR Two Thousand Seven Hundred Only
+&
+Declaration
+for ACUTE SYSTENS AND SQEUITIONS
+We declare that this invoice shows the actual price of the
+0)
+sYRate
+goods described and that all particulars are true and
+correct
+utneii8e
+ynatory 
+This is a Computer Generated Invoice
+Gup '
+KeMS
+8

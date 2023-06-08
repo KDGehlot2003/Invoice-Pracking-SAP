@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.7.4 on win32)" generated="20230606 17:17:38.242" rpa="false" schemaversion="3">
+<suite id="s1" name="ROBO" source="F:\Invoice\final\ROBO.robot">
+<test id="s1-t1" name="T1" line="17">
+<kw name="Click" library="SikuliLibrary">
+<arg>F:\\Invoice\\images\\SAP_ICON.jpg</arg>
+<doc>Click</doc>
+<msg timestamp="20230606 17:18:49.941" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686052129122.png'/&gt;
+[log] CLICK on L[462,747]@S(0) (661 msec)</msg>
+<status status="PASS" starttime="20230606 17:18:48.592" endtime="20230606 17:18:49.941"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:18:50.943" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:18:49.943" endtime="20230606 17:18:50.943"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>F:\\Invoice\\images\\SAP_LOGON.jpg</arg>
+<doc>Click</doc>
+<msg timestamp="20230606 17:18:52.193" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686052131309.png'/&gt;
+[log] CLICK on L[527,553]@S(0) (577 msec)</msg>
+<status status="PASS" starttime="20230606 17:18:50.945" endtime="20230606 17:18:52.193"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:18:53.208" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:18:52.197" endtime="20230606 17:18:53.209"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>F:\\Invoice\\images\\TEXT_BOX_MIR7.jpg</arg>
+<arg>MIR7</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20230606 17:18:54.937" level="INFO">Input Text:
+MIR7</msg>
+<msg timestamp="20230606 17:18:54.937" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686052133589.png'/&gt;
+[log] CLICK on L[119,52]@S(0) (545 msec)
+[log]  TYPE "MIR7"</msg>
+<status status="PASS" starttime="20230606 17:18:53.210" endtime="20230606 17:18:54.937"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:18:55.033" level="INFO">[log]  TYPE "#ENTER."</msg>
+<status status="PASS" starttime="20230606 17:18:54.939" endtime="20230606 17:18:55.034"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:01.052" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20230606 17:18:55.040" endtime="20230606 17:19:01.052"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>\</arg>
+<arg>${date}</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20230606 17:19:01.815" level="INFO">Input Text:
+01.04.2023
+[log]  TYPE "01.04.2023"</msg>
+<status status="PASS" starttime="20230606 17:19:01.054" endtime="20230606 17:19:01.815"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:02.819" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:01.817" endtime="20230606 17:19:02.819"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:02.918" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:02.823" endtime="20230606 17:19:02.918"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:03.932" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:02.924" endtime="20230606 17:19:03.932"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>\</arg>
+<arg>2023-24/0234.</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20230606 17:19:04.835" level="INFO">Input Text:
+2023-24/0234.
+[log]  TYPE "2023-24/0234."</msg>
+<status status="PASS" starttime="20230606 17:19:03.934" endtime="20230606 17:19:04.836"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:05.854" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:04.837" endtime="20230606 17:19:05.854"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:05.940" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:05.856" endtime="20230606 17:19:05.940"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:06.956" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:05.944" endtime="20230606 17:19:06.956"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:07.038" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:06.957" endtime="20230606 17:19:07.038"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:08.057" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:07.045" endtime="20230606 17:19:08.057"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>\</arg>
+<arg>${rate_gst}</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20230606 17:19:08.595" level="INFO">Input Text:
+7,188.00
+[log]  TYPE "7,188.00"</msg>
+<status status="PASS" starttime="20230606 17:19:08.059" endtime="20230606 17:19:08.595"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:09.609" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:08.597" endtime="20230606 17:19:09.609"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:09.695" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:09.611" endtime="20230606 17:19:09.695"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:10.707" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:09.698" endtime="20230606 17:19:10.707"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>\</arg>
+<arg>INR</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20230606 17:19:11.073" level="INFO">Input Text:
+INR
+[log]  TYPE "INR"</msg>
+<status status="PASS" starttime="20230606 17:19:10.709" endtime="20230606 17:19:11.073"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:13.084" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230606 17:19:11.075" endtime="20230606 17:19:13.085"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:13.218" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:13.087" endtime="20230606 17:19:13.218"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:15.234" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230606 17:19:13.224" endtime="20230606 17:19:15.235"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>SPACE</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:15.317" level="INFO">[log]  TYPE " "</msg>
+<status status="PASS" starttime="20230606 17:19:15.237" endtime="20230606 17:19:15.317"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:17.334" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230606 17:19:15.320" endtime="20230606 17:19:17.334"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:17.417" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:17.337" endtime="20230606 17:19:17.418"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:19.423" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230606 17:19:17.420" endtime="20230606 17:19:19.423"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>\</arg>
+<arg>KC</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20230606 17:19:19.663" level="INFO">Input Text:
+KC
+[log]  TYPE "KC"</msg>
+<status status="PASS" starttime="20230606 17:19:19.425" endtime="20230606 17:19:19.664"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:20.681" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:19.665" endtime="20230606 17:19:20.681"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:20.780" level="INFO">[log]  TYPE "#ENTER."</msg>
+<status status="PASS" starttime="20230606 17:19:20.683" endtime="20230606 17:19:20.780"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:21.799" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:20.784" endtime="20230606 17:19:21.799"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:21.896" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:21.803" endtime="20230606 17:19:21.896"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:22.911" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:21.899" endtime="20230606 17:19:22.911"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:22.997" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:22.912" endtime="20230606 17:19:22.998"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:24.013" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:23.004" endtime="20230606 17:19:24.013"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>\</arg>
+<arg>4007</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20230606 17:19:24.397" level="INFO">Input Text:
+4007
+[log]  TYPE "4007"</msg>
+<status status="PASS" starttime="20230606 17:19:24.015" endtime="20230606 17:19:24.397"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:25.412" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:24.398" endtime="20230606 17:19:25.412"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:25.562" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:25.413" endtime="20230606 17:19:25.562"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:26.578" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:25.566" endtime="20230606 17:19:26.578"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>\</arg>
+<arg>4000</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20230606 17:19:26.851" level="INFO">Input Text:
+4000
+[log]  TYPE "4000"</msg>
+<status status="PASS" starttime="20230606 17:19:26.581" endtime="20230606 17:19:26.852"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:27.859" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:26.853" endtime="20230606 17:19:27.859"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:27.943" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:27.861" endtime="20230606 17:19:27.944"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:28.959" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:27.948" endtime="20230606 17:19:28.959"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>SPACE</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:29.044" level="INFO">[log]  TYPE " "</msg>
+<status status="PASS" starttime="20230606 17:19:28.961" endtime="20230606 17:19:29.044"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:30.060" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:29.047" endtime="20230606 17:19:30.060"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>DOWN</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:30.140" level="INFO">[log]  TYPE "#DOWN."</msg>
+<status status="PASS" starttime="20230606 17:19:30.062" endtime="20230606 17:19:30.140"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:31.144" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:30.142" endtime="20230606 17:19:31.145"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:31.223" level="INFO">[log]  TYPE "#ENTER."</msg>
+<status status="PASS" starttime="20230606 17:19:31.147" endtime="20230606 17:19:31.224"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:32.238" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:31.225" endtime="20230606 17:19:32.238"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:32.321" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:32.239" endtime="20230606 17:19:32.321"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:33.328" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:32.324" endtime="20230606 17:19:33.328"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:33.413" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:33.331" endtime="20230606 17:19:33.413"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:34.424" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:33.415" endtime="20230606 17:19:34.424"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:34.571" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:34.427" endtime="20230606 17:19:34.572"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>500ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:35.082" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230606 17:19:34.575" endtime="20230606 17:19:35.082"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:35.172" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:35.084" endtime="20230606 17:19:35.172"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>500ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:35.690" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230606 17:19:35.186" endtime="20230606 17:19:35.690"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:35.790" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:35.691" endtime="20230606 17:19:35.790"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>500ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:36.312" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230606 17:19:35.798" endtime="20230606 17:19:36.312"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:36.399" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:36.314" endtime="20230606 17:19:36.399"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:37.410" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:36.403" endtime="20230606 17:19:37.410"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:37.512" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:37.413" endtime="20230606 17:19:37.513"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:38.524" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:37.514" endtime="20230606 17:19:38.524"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:38.611" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:38.526" endtime="20230606 17:19:38.611"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:39.619" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:38.613" endtime="20230606 17:19:39.619"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>\</arg>
+<arg>4</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20230606 17:19:39.701" level="INFO">Input Text:
+4
+[log]  TYPE "4"</msg>
+<status status="PASS" starttime="20230606 17:19:39.621" endtime="20230606 17:19:39.701"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:40.713" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:39.706" endtime="20230606 17:19:40.714"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:40.793" level="INFO">[log]  TYPE "#ENTER."</msg>
+<status status="PASS" starttime="20230606 17:19:40.716" endtime="20230606 17:19:40.794"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:41.811" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:19:40.795" endtime="20230606 17:19:41.811"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>TAB</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:41.896" level="INFO">[log]  TYPE "#TAB."</msg>
+<status status="PASS" starttime="20230606 17:19:41.812" endtime="20230606 17:19:41.897"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>500ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:42.416" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230606 17:19:41.900" endtime="20230606 17:19:42.417"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>\</arg>
+<arg>1000035604</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20230606 17:19:43.102" level="INFO">Input Text:
+1000035604
+[log]  TYPE "1000035604"</msg>
+<status status="PASS" starttime="20230606 17:19:42.419" endtime="20230606 17:19:43.103"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>500ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:43.607" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230606 17:19:43.104" endtime="20230606 17:19:43.607"/>
+</kw>
+<kw name="Press Special Key" library="SikuliLibrary">
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20230606 17:19:43.709" level="INFO">[log]  TYPE "#ENTER."</msg>
+<status status="PASS" starttime="20230606 17:19:43.609" endtime="20230606 17:19:43.709"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:19:53.749" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230606 17:19:43.733" endtime="20230606 17:19:53.749"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>F:\\Invoice\\images\\SIMULATION.jpg</arg>
+<doc>Click</doc>
+<msg timestamp="20230606 17:19:54.906" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686052194083.png'/&gt;
+[log] CLICK on L[467,116]@S(0) (546 msec)</msg>
+<status status="PASS" starttime="20230606 17:19:53.751" endtime="20230606 17:19:54.907"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>F:\\Invoice\\images\\SIMULATION.jpg</arg>
+<doc>Click</doc>
+<msg timestamp="20230606 17:19:56.144" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1686052195279.png'/&gt;
+[log] CLICK on L[468,116]@S(0) (562 msec)</msg>
+<status status="PASS" starttime="20230606 17:19:54.945" endtime="20230606 17:19:56.145"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:20:06.154" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230606 17:19:56.147" endtime="20230606 17:20:06.154"/>
+</kw>
+<status status="PASS" starttime="20230606 17:18:48.591" endtime="20230606 17:20:06.156"/>
+</test>
+<test id="s1-t2" name="T2" line="99">
+<kw name="Run" library="AutoItLibrary">
+<arg>python F:\\Invoice\\final\\script\\goto_right.py</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<msg timestamp="20230606 17:20:06.173" level="INFO">AutoItLibrary.Run(FileName='python F:\Invoice\final\script\goto_right.py', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20230606 17:20:06.161" endtime="20230606 17:20:06.173"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:20:07.191" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:20:06.174" endtime="20230606 17:20:07.192"/>
+</kw>
+<kw name="Run" library="AutoItLibrary">
+<arg>python F:\\Invoice\\final\\script\\goto_right.py</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<msg timestamp="20230606 17:20:07.204" level="INFO">AutoItLibrary.Run(FileName='python F:\Invoice\final\script\goto_right.py', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20230606 17:20:07.194" endtime="20230606 17:20:07.207"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:20:08.225" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:20:07.209" endtime="20230606 17:20:08.226"/>
+</kw>
+<kw name="Run" library="AutoItLibrary">
+<arg>python F:\\Invoice\\final\\script\\goto_right.py</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<msg timestamp="20230606 17:20:08.238" level="INFO">AutoItLibrary.Run(FileName='python F:\Invoice\final\script\goto_right.py', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20230606 17:20:08.227" endtime="20230606 17:20:08.238"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:20:09.243" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:20:08.239" endtime="20230606 17:20:09.243"/>
+</kw>
+<kw name="Run" library="AutoItLibrary">
+<arg>python F:\\Invoice\\final\\script\\goto_right.py</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<msg timestamp="20230606 17:20:09.255" level="INFO">AutoItLibrary.Run(FileName='python F:\Invoice\final\script\goto_right.py', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20230606 17:20:09.244" endtime="20230606 17:20:09.255"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:20:10.266" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:20:09.256" endtime="20230606 17:20:10.267"/>
+</kw>
+<kw name="Run" library="AutoItLibrary">
+<arg>python F:\\Invoice\\final\\script\\goto_down.py</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<msg timestamp="20230606 17:20:10.281" level="INFO">AutoItLibrary.Run(FileName='python F:\Invoice\final\script\goto_down.py', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20230606 17:20:10.271" endtime="20230606 17:20:10.284"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:20:11.303" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:20:10.293" endtime="20230606 17:20:11.304"/>
+</kw>
+<kw name="Run" library="AutoItLibrary">
+<arg>python F:\\Invoice\\final\\script\\ctrla.py</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<msg timestamp="20230606 17:20:11.316" level="INFO">AutoItLibrary.Run(FileName='python F:\Invoice\final\script\ctrla.py', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20230606 17:20:11.306" endtime="20230606 17:20:11.316"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:20:12.326" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:20:11.317" endtime="20230606 17:20:12.326"/>
+</kw>
+<kw name="Run" library="AutoItLibrary">
+<arg>python F:\\Invoice\\final\\script\\ctrlc.py</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<msg timestamp="20230606 17:20:12.337" level="INFO">AutoItLibrary.Run(FileName='python F:\Invoice\final\script\ctrlc.py', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20230606 17:20:12.328" endtime="20230606 17:20:12.337"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230606 17:20:13.346" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230606 17:20:12.338" endtime="20230606 17:20:13.346"/>
+</kw>
+<status status="PASS" starttime="20230606 17:20:06.160" endtime="20230606 17:20:13.347"/>
+</test>
+<test id="s1-t3" name="T3" line="115">
+<kw name="Run Process" library="Process">
+<var>${output}</var>
+<arg>python</arg>
+<arg>F:\\Invoice\\final\\condition.py</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<msg timestamp="20230606 17:20:13.352" level="INFO">Starting process:
+python F:\Invoice\final\condition.py</msg>
+<msg timestamp="20230606 17:20:13.359" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20230606 17:20:13.539" level="INFO">Process completed.</msg>
+<msg timestamp="20230606 17:20:13.539" level="INFO">${output} = &lt;result object with rc 0&gt;</msg>
+<status status="PASS" starttime="20230606 17:20:13.351" endtime="20230606 17:20:13.539"/>
+</kw>
+<kw name="Convert To Lower Case" library="String">
+<var>${lowercase_output}</var>
+<arg>${output.stdout}</arg>
+<doc>Converts string to lower case.</doc>
+<msg timestamp="20230606 17:20:13.543" level="INFO">${lowercase_output} = true</msg>
+<status status="PASS" starttime="20230606 17:20:13.541" endtime="20230606 17:20:13.544"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${boolean_result}</var>
+<arg>'${lowercase_output}' == 'true'</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230606 17:20:13.545" level="INFO">${boolean_result} = True</msg>
+<status status="PASS" starttime="20230606 17:20:13.544" endtime="20230606 17:20:13.545"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${boolean_result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230606 17:20:13.545" endtime="20230606 17:20:13.546"/>
+</kw>
+<while condition="${boolean_result} == True">
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${boolean_result} YEAH!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230606 17:20:13.547" endtime="20230606 17:20:13.548"/>
+</kw>
+<break>
+<status status="PASS" starttime="20230606 17:20:13.549" endtime="20230606 17:20:13.549"/>
+</break>
+<status status="PASS" starttime="20230606 17:20:13.547" endtime="20230606 17:20:13.549"/>
+</iter>
+<status status="PASS" starttime="20230606 17:20:13.547" endtime="20230606 17:20:13.549"/>
+</while>
+<status status="PASS" starttime="20230606 17:20:13.350" endtime="20230606 17:20:13.549"/>
+</test>
+<status status="PASS" starttime="20230606 17:17:38.249" endtime="20230606 17:20:13.552"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="ROBO">ROBO</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230606 17:17:50.322" level="WARN">Using CPU. Note: This module is much faster with a GPU.</msg>
+</errors>
+</robot>

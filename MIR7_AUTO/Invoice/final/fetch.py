@@ -1,0 +1,206 @@
+import re
+from  datetime import datetime
+
+
+
+with open('F:\\Invoice\\final\\converted.txt') as f:
+    lines = f.readlines()
+
+
+
+def extract_date_from_pdf():
+    
+    extracted_dates = []
+
+    for i in lines:
+        date_pattern = r'\b\d{1,2}-[A-Za-z]{3}-\d{2}\b'   # Example date pattern: 1-may-22
+        dates = re.findall(date_pattern, i)
+        extracted_dates.extend(dates)
+        # print(dates)
+        # print(date_pattern)
+
+    return extracted_dates
+
+def extract_invoice_no_from_pdf():
+    
+    extracted_invoice_no = []
+
+    for i in lines:
+        invoice_no_pattern = r'[A-Za-z]{2}\/\d{2}-\d{2}\/\d{3}|[A-Za-z]{2}\/\d{4}-\d{2}\/\d{4}|\d{4}-\d{2}\/\d{4}|\d{4}-\d{2}\/\d{3}'
+        invoices = re.findall(invoice_no_pattern, i)
+        extracted_invoice_no.extend(invoices)
+
+    return extracted_invoice_no
+
+def extract_PO_no_from_pdf():
+    
+    extracted_PO_no = []
+
+    for i in lines:
+        PO_no_pattern = r'^\d{10}$'
+        POs = re.findall(PO_no_pattern, i)
+        extracted_PO_no.extend(POs)
+
+    return extracted_PO_no
+
+
+
+def extract_rate_from_pdf():
+    
+    extracted_rate = []
+
+    for i in lines:
+        PO_no_pattern = r'\d{1,3}(?:,\d{3})*\.\d{2}'
+        POs = re.findall(PO_no_pattern, i)
+        extracted_rate.extend(POs)
+
+    return extracted_rate
+
+
+def cal_rate():
+    global t_rate
+    global t_rate_gst
+    rts = extract_rate_from_pdf()
+    rts = [value.replace(',', '') for value in rts]
+    rts = [float(value) for value in rts]
+    list2 = list(set(rts))
+    list2.sort()
+    # print(list2)
+    high_rt = list2[-1]
+    sec_high_rt = list2[-2]
+    t_rate_gst = "{:,.2f}".format(high_rt)
+
+    t_rate = "{:,.2f}".format(sec_high_rt)
+
+def rate():
+    global t_rate
+    global t_rate_gst
+    rts = extract_rate_from_pdf()
+    rts = [value.replace(',', '') for value in rts]
+    rts = [float(value) for value in rts]
+    list2 = list(set(rts))
+    list2.sort()
+    # print(list2)
+    high_rt = list2[-1]
+    sec_high_rt = list2[-2]
+    t_rate_gst = "{:,.2f}".format(high_rt)
+
+    t_rate = "{:,.2f}".format(sec_high_rt)
+    print("Total Rate:",t_rate_gst)
+    # print(type(t_rate))
+    print("Total Rate without gst:",t_rate)
+
+
+def date():
+    global max_dt
+    dates = extract_date_from_pdf()
+    dt_lst = []
+    print(dates)
+    for i in dates:
+        date_object = datetime.strptime(i, '%d-%b-%y').date()
+        dt = date_object.strftime("%d.%m.%Y")
+        dt_lst.append(dt)
+    print(dt_lst)
+    max_dt = max(dt_lst)
+    try:
+        if max_dt!=None:
+            print("date: ",max_dt)
+        else:
+            print("Date No. : CAN'T FIND THE VALUE ")
+    except:
+        print("date error")
+
+
+def invoice_no():
+    global invoices
+    invoices = extract_invoice_no_from_pdf()
+    # for invoice in invoices:
+    try:
+        if invoices!=None:
+            print("Invoice No. :", invoices[0])
+        else:
+            print("Invoice No. : CAN'T FIND THE VALUE ")
+    except:
+        print("Invoice error")
+
+
+def po_no():
+    global POs
+    POs = extract_PO_no_from_pdf()
+    # for PO in POs:
+    try:
+        if POs!=None:
+            print("PO No. :", POs[0])
+        else:
+            print("PO No. : CAN'T FIND THE VALUE ")
+    except:
+        print("PO error")
+
+# print(__name__)
+def main():
+    
+    
+    global t_rate
+    global t_rate_gst
+    rts = extract_rate_from_pdf()
+    rts = [value.replace(',', '') for value in rts]
+    rts = [float(value) for value in rts]
+    list2 = list(set(rts))
+    list2.sort()
+    # print(list2)
+    high_rt = list2[-1]
+    sec_high_rt = list2[-2]
+    t_rate_gst = "{:,.2f}".format(high_rt)
+
+    t_rate = "{:,.2f}".format(sec_high_rt)
+    print("Total Rate:",t_rate_gst)
+    # print(type(t_rate))
+    print("Total Rate without gst:",t_rate) 
+
+    
+    global max_dt
+    dates = extract_date_from_pdf()
+    dt_lst = []
+    print(dates)
+    for i in dates:
+        date_object = datetime.strptime(i, '%d-%b-%y').date()
+        dt = date_object.strftime("%d.%m.%Y")
+        dt_lst.append(dt)
+    print(dt_lst)
+    max_dt = max(dt_lst)
+    try:
+        if max_dt!=None:
+            print("date: ",max_dt)
+        else:
+            print("Date No. : CAN'T FIND THE VALUE ")
+    except:
+        print("date error")  
+        
+       
+    global invoices
+    invoices = extract_invoice_no_from_pdf()
+    # for invoice in invoices:
+    try:
+        if invoices!=None:
+            print("Invoice No. :", invoices[0])
+        else:
+            print("Invoice No. : CAN'T FIND THE VALUE ")
+    except:
+        print("Invoice error")    
+        
+        
+        
+    global POs
+    POs = extract_PO_no_from_pdf()
+    # for PO in POs:
+    try:
+        if POs!=None:
+            print("PO No. :", POs[0])
+        else:
+            print("PO No. : CAN'T FIND THE VALUE ")
+    except:
+        print("PO error")        
+    
+
+if __name__=="__main__":
+    main()

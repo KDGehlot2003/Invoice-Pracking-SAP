@@ -1,0 +1,13 @@
+import pyperclip
+
+# Read the text from the clipboard
+text = pyperclip.paste()
+ 
+# Print the text
+print(text)
+
+
+rate_to_be_checked = float(text.replace(",", ""))
+print(float_number)
+
+

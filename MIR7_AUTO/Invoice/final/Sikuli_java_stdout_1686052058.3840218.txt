@@ -1,0 +1,5 @@
+17:17:39.651 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1018ms to org.robotframework.remoteserver.logging.Jetty2Log4J
+17:17:39.782 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_271-b09
+17:17:39.876 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5bd03f44{/,null,AVAILABLE}
+17:17:40.071 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@442675e1{HTTP/1.1, (http/1.1)}{0.0.0.0:64494}
+17:17:40.072 [main] INFO  org.eclipse.jetty.server.Server - Started @1440ms

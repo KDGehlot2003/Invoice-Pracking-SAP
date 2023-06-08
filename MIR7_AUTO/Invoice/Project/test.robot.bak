@@ -1,0 +1,13 @@
+*** Settings ***
+Library           AutoItLibrary
+Variables         F:\\11.11_Sharing\\11.11_sharing\\MIR7_AUTO\\fiinal\\script\\condition.py
+*** Variables ***
+${rate}            6,091.70 
+${prate}           6,091.70 
+
+*** Test Cases *** 
+T1
+
+    IF    ${rate}==${prate}
+        Log    This is executed
+    END
